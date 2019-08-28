@@ -3,7 +3,7 @@ const net = require('net');
 
 const connect = function () {
   const conn = net.createConnection({
-    host: '10.0.2.15',
+    host: '172.46.0.110',
     port: 50541
   });
   // interpret incoming data as text
@@ -21,19 +21,10 @@ const connect = function () {
 
     conn.write('Name: AJT');
 
-
-    // setTimeout(function () {
-    //   conn.write('Move: up')
-    // }, 1000);
-    // setTimeout(function () {
-    //   conn.write('Move: down')
-    // }, 3000);
-    // setTimeout(function () {
-    //   conn.write('Move: left')
-    // }, 2000);
-    // setTimeout(function () {
-    //   conn.write('Move: right')
-    // }, 5000);
+    conn.write('Move: up')
+    conn.write('Move: down')
+    // conn.write('Move: left')
+    // conn.write('Move: right')
 
   });
 
