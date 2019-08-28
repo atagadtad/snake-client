@@ -20,6 +20,7 @@ const connect = function () {
     console.log('Successfully connected to game server')
 
     conn.write('Name: AJT');
+    conn.write('Say: huhu')
 
     conn.write('Move: up')
     conn.write('Move: down')
